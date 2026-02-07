@@ -1,0 +1,123 @@
+/* ===================== */
+/* HERO SECTION */
+/* ===================== */
+.page-hero {
+  width: 100%;
+  height: 420px;                 /* 👈 important */
+  background-size: cover;        /* fill properly */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark overlay */
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Hero content */
+.page-hero-overlay {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.page-hero-overlay h1 {
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}/* ===== CUPS SECTION ===== */
+.cups-section {
+  padding: 80px 60px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+/* TITLE */
+.cups-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #4a2c6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cups-title .line {
+  width: 60px;
+  height: 3px;
+  background: #df5c0f;
+}
+
+.cups-subtitle {
+  max-width: 700px;
+  margin: 20px auto 60px;
+  font-size: 18px;
+}
+
+/* GRID */
+.cups-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.cup-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 30px 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.cup-card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== FIX PRODUCT IMAGES ===== */
+
+.cup-image {
+  height: 180px;                 /* SAME height for all */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cup-image img {
+  max-width: 220px;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;           /* 🔥 KEY FIX */
+  image-rendering: auto;
+}
+.cup-card {
+  min-height: 360px;             /* keeps text aligned */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .cups-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cups-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,41 @@
+.products-page {
+  padding: 60px 40px;
+  background-color: #2f8fa3; /* blue theme */
+}
+
+.products-title {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icecream-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.icecream-card:hover {
+  transform: translateY(-8px);
+}
+
+.icecream-image {
+  object-fit: contain;
+}
+
+.icecream-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #333;
+}
