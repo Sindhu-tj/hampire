@@ -460,6 +460,7 @@ body {
   padding-top: 0;        /* ⬅️ remove extra space */
   padding-bottom: 60px;
 }
+<<<<<<< HEAD
 .our-story-section {
   display: flex;
   align-items: center;
@@ -467,6 +468,8 @@ body {
   padding: 80px 10%;
   gap: 60px;
 }
+=======
+>>>>>>> b84fc68743fcef89a51b8023a678670672e02ce5
 
 /* TITLE */
 .why-title {
@@ -1229,6 +1232,7 @@ body {
   }
 }
 @media (max-width: 1024px) {
+<<<<<<< HEAD
   .our-story-section {
     flex-direction: column;
     justify-content: center;
@@ -1246,3 +1250,17 @@ body {
   }
 }
 f
+=======
+  .our-story-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .our-story-image,
+  .our-story-content {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+>>>>>>> b84fc68743fcef89a51b8023a678670672e02ce5
