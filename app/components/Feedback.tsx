@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export default function Feedback() {
   return (
     <section className="feedback">
@@ -24,7 +23,6 @@ export default function Feedback() {
     </section>
   );
 }
-=======
 export default function Feedback() {
   return (
     <section className="feedback">
@@ -50,4 +48,3 @@ export default function Feedback() {
     </section>
   );
 }
->>>>>>> b84fc68743fcef89a51b8023a678670672e02ce5
